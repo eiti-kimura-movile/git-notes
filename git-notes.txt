@@ -1,0 +1,20 @@
+githun instructions:
+
+Next steps:
+
+  mkdir git-notes
+  cd git-notes
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:eitikimura/git-notes.git
+  git push origin master
+      
+
+Existing Git Repo?
+
+  cd existing_git_repo
+  git remote add origin git@github.com:eitikimura/git-notes.git
+  git push origin master
+      
