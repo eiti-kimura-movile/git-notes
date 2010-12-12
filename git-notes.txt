@@ -1,4 +1,4 @@
-githun instructions:
+github instructions:
 
 Next steps:
 
@@ -18,3 +18,11 @@ Existing Git Repo?
   git remote add origin git@github.com:eitikimura/git-notes.git
   git push origin master
       
+
+Resources:
+
+Everyday GIT With 20 Commands Or So
+http://www.kernel.org/pub/software/scm/git/docs/everyday.html
+
+gittutorial(7) Manual Page
+http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html
