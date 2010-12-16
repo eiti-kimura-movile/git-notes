@@ -1,0 +1,60 @@
+***** CONFIGURATION *****
+
+-- configure your identity
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+-- setting your default editor
+$ git config --global core.editor emacs
+
+******************
+
+
+
+***** BASICS *****
+-- initiate an repository
+$ git init
+
+-- git status, you see your untracked/modified/added/deleted files 
+$ git status
+
+-- add files
+$ git add
+
+-- commiting changes
+$ git commit -a
+
+-- unmodifying a modified file (discard changes and replace with head - only local repository)
+$ git checkout -- <file>
+
+*********************
+
+
+
+*** GIT LOG *********
+-- see the entire log
+$ git log
+
+-- see the last 2 commits
+$ git log -2
+
+-- see the log changes
+$ git log -p
+
+-- see 5 last detailed log changes
+$ git log -p -5
+
+-- see the formatted log
+$ git log --pretty=format:"%h - %an, %ar : %s"
+output:
+   ca82a6d - Scott Chacon, 11 months ago : changed the version number
+   085bb3b - Scott Chacon, 11 months ago : removed unnecessary test code
+   a11bef0 - Scott Chacon, 11 months ago : first commit
+ 
+-- see log with a summary and overview of changes
+$ git log --stat --summary
+
+-- see details about the commit
+$ git show c82a22c39cbc32576f64f5c6b3f24b99ea8149c7
+
+****************
