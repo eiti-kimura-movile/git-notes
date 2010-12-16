@@ -1,0 +1,8 @@
+-- initiate an repository
+git init
+
+-- add files
+git add
+
+-- commiting changes
+git commit -a
