@@ -1,0 +1,4 @@
+***** REMOTE REPOSITORIES *******
+
+Remote repositories are versions of your project that are hosted on the Internet or network somewhere.
+Collaborating with others involves managing these remote repositories and pushing and pulling data to and from them when you need to share work.
