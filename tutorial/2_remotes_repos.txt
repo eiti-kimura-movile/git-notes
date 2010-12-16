@@ -2,3 +2,43 @@
 
 Remote repositories are versions of your project that are hosted on the Internet or network somewhere.
 Collaborating with others involves managing these remote repositories and pushing and pulling data to and from them when you need to share work.
+
+Remotes :
+
+-- cloning a project
+$ git clone git://github.com/schacon/ticgit.git
+Initialized empty Git repository in /private/tmp/ticgit/.git/
+remote: Counting objects: 595, done.
+remote: Compressing objects: 100% (269/269), done.
+remote: Total 595 (delta 255), reused 589 (delta 253)
+Receiving objects: 100% (595/595), 73.31 KiB | 1 KiB/s, done.
+Resolving deltas: 100% (255/255), done.
+$ cd ticgit
+
+-- shows default remote name
+$ git remote
+origin
+
+-- shows default url
+$ git remote -v
+origin	git://github.com/schacon/ticgit.git
+
+-- add remote repositories
+git remote add [shortname] [url]:
+
+example:
+$ git remote add pb git://github.com/paulboone/ticgit.git
+$ git remote -v
+origin	git://github.com/schacon/ticgit.git
+pb	git://github.com/paulboone/ticgit.git
+
+-- push - When you have your project at a point that you want to share, you have to push it upstream
+-- git push [remote-name] [branch-name]
+$ git push origin master
+
+-- show a remote details
+$ git remote show origin
+
+-- rename and remove remotes
+$ git remote rename pb paul
+$ git remote rm paul
