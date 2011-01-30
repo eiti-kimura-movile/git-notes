@@ -25,3 +25,10 @@ http://www.kernel.org/pub/software/scm/git/docs/everyday.html
 
 gittutorial(7) Manual Page
 http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html
+
+Get commit from another repos:
+git remote add local-repos /home/eiti/repos/project
+git remote update  -- fetches data from remotes
+git log local-repos/master
+git cherry-pick 84c4a1a8591e33204b  -- this was commited on local-repos
+
