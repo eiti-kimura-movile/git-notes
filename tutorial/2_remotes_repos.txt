@@ -42,3 +42,6 @@ $ git remote show origin
 -- rename and remove remotes
 $ git remote rename pb paul
 $ git remote rm paul
+
+-- shows difference between local copy and a remote one:
+git diff origin/master..master 
