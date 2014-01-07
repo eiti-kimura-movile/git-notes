@@ -1,0 +1,5 @@
+git reset --hard <tag/branch/commit id>
+Notes:
+
+git reset without the --hard option resets the commit history, but not the files. With the --hard option the files in working tree are also reset.
+If you wish to commit that state, so remote repository also points to rolled back commit do: git push <reponame> -f
